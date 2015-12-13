@@ -324,7 +324,7 @@ static int process_mgmt( n2n_sn_t * sss,
                          "----------------\n" );
 
     ressize += snprintf( resbuf+ressize, N2N_SN_PKTBUF_SIZE-ressize, 
-                         "uptime    %lu\n", (now - sss->start_time) );
+                         "uptime    %lu\n", (unsigned long)(now - sss->start_time) );
 
     ressize += snprintf( resbuf+ressize, N2N_SN_PKTBUF_SIZE-ressize, 
                          "edges     %u\n", 
